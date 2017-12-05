@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {IRecipes} from 'C:/Users/s00154171/Desktop/JustCook/src/app/recipe-search/Recipe'
+
 @Component({
   selector: 'app-recipe-search',
   templateUrl: './recipe-search.component.html',

@@ -1,4 +1,4 @@
-export interface IRecipes{
+interface IRecipes{
     recipeID:number;
     recipeName:string;
     recipeImage:string;
