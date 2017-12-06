@@ -3,6 +3,8 @@ import {RecipeService} from './recipes.service'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 
 import { AppComponent } from './app.component';
 import { RecipeSearchComponent } from './recipe-search/recipe-search.component';
@@ -24,7 +26,8 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
     FormsModule,
    // MatCardModule,
     //BrowserAnimationsModule,
-   HttpClientModule
+   HttpClientModule,
+   HttpModule
    
    
   ],
