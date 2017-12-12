@@ -1,4 +1,5 @@
 import {HttpClientModule,HttpClient } from '@angular/common/http';
+<<<<<<< HEAD
 import {RecipeService} from './recipes.service'
 import {BrowserModule } from '@angular/platform-browser';
 import {NgModule } from '@angular/core';
@@ -6,6 +7,14 @@ import {FormsModule} from '@angular/forms';
 import {Routes, RouterModule } from '@angular/router';
 import{LocationStrategy,HashLocationStrategy} from '@angular/common';
 import {HttpModule} from '@angular/http';
+=======
+import {RecipeService} from './recipes.service';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+>>>>>>> 0f1a9a542e2dab6b3b04b3a936a7a85eb24a814e
 
 import { AppComponent } from './app.component';
 import { RecipeSearchComponent } from './recipe-search/recipe-search.component';
@@ -40,6 +49,7 @@ const routes:Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+<<<<<<< HEAD
      HttpClientModule,
      RouterModule.forRoot(routes),
      
@@ -55,6 +65,14 @@ const routes:Routes = [
     BrowserAnimationsModule,
     HttpModule
      
+=======
+   // MatCardModule,
+    //BrowserAnimationsModule,
+   HttpClientModule,
+   HttpModule
+   
+   
+>>>>>>> 0f1a9a542e2dab6b3b04b3a936a7a85eb24a814e
   ],
   providers: [RecipeService],
    // { provide: LocationStrategy, useClass: HashLocationStrategy},
