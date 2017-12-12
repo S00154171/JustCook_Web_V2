@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeSearchComponent implements OnInit {
 
+  options = [
+    'Indian',
+    'American',
+    'Chinese',
+    'Greek',
+  ];
+
   filteredRecipe:IRecipes[];
   recipes:IRecipes[];
   _listFilter:string;
