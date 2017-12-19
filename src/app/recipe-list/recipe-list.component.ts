@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {RecipeService} from 'C:/Users/s00154171/Desktop/WebAssignments/JustCook/src/app/recipes.service'
+import {RecipeService} from 'C:/Users/Fidel Rose/Documents/web/JustCook/JustCook/src/app/recipes.service'
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx';
 
@@ -20,7 +20,7 @@ export class RecipeListComponent implements OnInit {
     ngOnInit(){
       this._RecipeService.getRecipes().subscribe(recipes =>{
         
-      this.recipes = recipes;
+     // this.recipes = recipes;
     },
     error => this.errorMessage = <any>error);
 }

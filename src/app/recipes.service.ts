@@ -14,6 +14,7 @@ export class RecipeService {
  constructor(private _http: HttpClient) { }
 
  getRecipes():Observable<IRecipes>{
+   console.log("In RecSer: ");
    return this._http.get<IRecipes>(this._RecipesUrl)
    .do(data => console.log('All:' + JSON.stringify(data)))
    .catch(this.handleError);
