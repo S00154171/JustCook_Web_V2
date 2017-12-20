@@ -9,11 +9,11 @@ import {HttpClient,HttpErrorResponse } from '@angular/common/http';
 
 export class RecipeService {
   
- private _RecipesUrl = 'http://localhost:3000/Recipes';
+ private _RecipesUrl = 'https://pixabay.com/api/?key=7446425-7870ab1ffa328bc5465e5bf42&q=food';
   
  constructor(private _http: HttpClient) { }
 
- getRecipes():Observable<IRecipes>{
+ getRecipes():Observable<IRecipes[]>{
    console.log("In RecSer: ");
    return this._http.get<IRecipes>(this._RecipesUrl)
    .do(data => console.log('All:' + JSON.stringify(data)))

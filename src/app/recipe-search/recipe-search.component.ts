@@ -12,6 +12,7 @@ import {map} from 'rxjs/operators/map';
 export class RecipeSearchComponent {
 
 myControl:FormControl = new FormControl();
+val: string;
 
   options = [
     'Indian',
@@ -44,15 +45,16 @@ myControl:FormControl = new FormControl();
   // }
 
 
-  ngOnInit() {
-        this.filteredOptions = this.myControl.valueChanges
+ ngOnInit() {
+    this.filteredOptions = this.myControl.valueChanges
       .pipe(
         startWith(''),
         map(val => this.filter(val))
       );
+      
   }
 
-   filter(val: string): string[] {
+   filter(val:any): string[] {
     return this.options.filter(option =>
       option.toLowerCase().indexOf(val.toLowerCase()) === 0);
   }

@@ -1,6 +1,12 @@
 
 <h3>List Of Recipes</h3>
+<ul>
+  <li *ngFor="let Image of data">
+      <img src="{{Image.webformatURL}}"/>
+<mat-toolbar>
+  <button mat-button   routerLink="/RecipeDescription">View Recipe</button>
+  <button mat-button>Add Favourites</button>
 
-  <li *ngFor="let recipe of recipes">
-    {{recipe.recipeName}}
+</mat-toolbar>
   </li>
+</ul>
