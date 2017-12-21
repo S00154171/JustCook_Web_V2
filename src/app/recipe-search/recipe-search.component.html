@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mat-card>
 <form class="example-form">
   <mat-form-field class="example-full-width">
@@ -10,3 +11,47 @@
   </mat-form-field>
 </form>
 </mat-card>
+=======
+<<<<<<< HEAD
+<mat-card>
+ <div class="example-full-width">
+   <input type='text' placeholder="Search For Recipes..."[(ngModel)]='listFilter' />
+ </div >
+<div id="FilterBy">
+  <h4>Filtered by : {{listFilter}}</h4>
+</div> 
+</mat-card>
+
+=======
+<div class="recipe-search">
+  <input type='text' placeholder="Search For Recipes..."
+  [(ngModel)]='listFilter' />
+</div>
+<div>
+  <h3>Filtered by : {{listFilter}}</h3>
+</div>
+<div class="container">
+  <div class="row">
+      <table class="table">
+          <thead class="thead-inverse">
+          <tr>
+              <th class="text-center">User ID</th>
+              <th class="text-center">ID</th>
+              <th class="text-center">Title</th>
+              <th class="text-center">Body</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let post of _postsArray">
+              <td class="text-center" style="width: 15px;">{{post.recipeImage}}</td>
+              <td class="text-center" style="width: 15px;">{{post.recipeID}}</td>
+              <td class="text-center" style="width: 200px;">{{post.recipeName}}</td>
+              <td class="text-center">{{post.body}}</td>
+          </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+>>>>>>> 0f1a9a542e2dab6b3b04b3a936a7a85eb24a814e
+
+>>>>>>> 507f56f8387fd36cd952e37e6eee1f227dd62b00

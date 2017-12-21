@@ -23,6 +23,7 @@ val: string;
 
   filteredOptions: Observable<string[]>;
 
+<<<<<<< HEAD
 
   // filteredRecipe:IRecipes[];
   // recipes:IRecipes[];
@@ -34,6 +35,25 @@ val: string;
   //   this._listFilter = value;
   //   this.filteredRecipe = this.listFilter ? this.performFilter(this.listFilter) : this.recipes
   // }
+=======
+  options = [
+    'Indian',
+    'American',
+    'Chinese',
+    'Greek',
+  ];
+
+  filteredRecipe:IRecipes[];
+  recipes:IRecipes[];
+  _listFilter:string;
+  get listFilter():string{
+    return this._listFilter;
+  }
+  set listFilter(value:string){
+    this._listFilter = value;
+    this.filteredRecipe = this.listFilter ? this.performFilter(this.listFilter) : this.recipes
+  }
+>>>>>>> 507f56f8387fd36cd952e37e6eee1f227dd62b00
 
 
   constructor() { }
